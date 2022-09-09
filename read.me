@@ -1,0 +1,32 @@
+The main goal of this project for me was to make the site responsive and scaleable. It was by far the most challenging part of this project but I am very
+happy with how it turned out :)
+
+The basic layout of the website is a scrollable index page, with a clickable About me page. This was my first time trying out a "multiple" page setup, and
+was honestly shocked that it was just a bit of html and very easy to make. I could not find a way to link the navbar to both pages, and as far as my
+googling tells me it's not possible with just html. So both pages have the same header.
+
+I started out by making a mobile version of the two pages. When I was happy with the look I then moved up a screen size and adjusted the layout acoordingly.
+I did have to go back and forth a few times to fix things but Tailwind's sm md lg and xl elements helped simplify things a lot. I ended up not using sm
+very much because Tailwind assumes you are working with mobile first, so I mostly had to specify larger screen sizes.
+
+The navbar was really fun make. I learned about the "hidden" element, wich allows you to hide and then reveal content at a certain breakpoint. I used "hide"
+to"shrink" the navbar into a hamburger menu in the mobile size. The navbar itself was made using "block" (display:block) in alternating colors.
+Unfortunately I couldn't figure out how to get the hamburger menu to actually work in time. A challenge for another project perhaps.
+
+I used flexbox for all the different sections. For some reason Tailwind added a lot of width to <divs> and pictures, which made it impossible to work with
+unless wrapped in a flex. Changing the width/size didn't work and I am still kind of scratching my head over that.
+
+For the My work section I made cards. Each card is a <div> with a white background adjusted for size. The arrow is just a text symbol that I copied and
+pasted into <p> tags. I couldn't find an image that worked well, so I tried this solution and like the way it came out. Each <div> is wrapped in an <a href>
+that takes you to a project. I used target="blank" so the link would open in a new tab.
+
+It took me a while to get used to Tailwind. The setup was very confusing to me but worked out in the end. It felt a little bit daunting at first to have to
+look up things in the documentation - things I knew in CSS but had to translate to Tailwind. That sometimes felt like a barrier, especially in the beginning.
+Like I mentioned with the unexpected width of things, sometimes Tailwind had it's own rules that didn't make sense to me. For example I had to manually go and
+change font and size of H1 because otherwise it looked exactly like the text in <p>. It didn't pop out as a heading like I was used to.
+
+What I liked about Tailwind is that once you get used to it speeds up your work time a lot. It was nice to have everything in the same place and not have to jump
+between an html and css file. Also the "lingo" gets intuitive after a while, often I could guess the element without looking at the documentation.
+Because Tailwind allows you to work more directly with each div and section, I felt it gave me a better understanding of how all the different items of a page
+behave and how they influence each other - especially within flex. Often I would pile a bunch of commands on to a parent a then get frustrated because nothing
+was working, and that made me have to rethink and pay attention to all the links in the chain.
